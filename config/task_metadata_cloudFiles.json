@@ -1,0 +1,89 @@
+[
+    {
+        "src_catalog": null,
+        "src_schema": null,
+        "src_table": null,
+        "src_path": "/Volumes/chris_koester/dlt_metaprog_dev/source_files/src_table_01",
+        "tgt_table": "tgt_table_01",
+        "expectations": {
+            "valid_event_date": "event_date <> '2020-01-01'"
+        },
+        "batch": "1"
+    },
+    {
+        "src_catalog": null,
+        "src_schema": null,
+        "src_table": null,
+        "src_path": "/Volumes/chris_koester/dlt_metaprog_dev/source_files/src_table_02",
+        "tgt_table": "tgt_table_02",
+        "expectations": {
+            "valid_event_date": "event_date <> '2020-01-01'"
+        },
+        "batch": "1"
+    },
+    {
+        "src_catalog": null,
+        "src_schema": null,
+        "src_table": null,
+        "src_path": "/Volumes/chris_koester/dlt_metaprog_dev/source_files/src_table_03",
+        "tgt_table": "tgt_table_03",
+        "expectations": {
+            "valid_event_date": "event_date <> '2020-01-01'"
+        },
+        "batch": "1"
+    },
+    {
+        "src_catalog": null,
+        "src_schema": null,
+        "src_table": null,
+        "src_path": "/Volumes/chris_koester/dlt_metaprog_dev/source_files/src_table_04",
+        "tgt_table": "tgt_table_04",
+        "expectations": {
+            "valid_event_date": "event_date <> '2020-01-01'"
+        },
+        "batch": "1"
+    },    {
+        "src_catalog": null,
+        "src_schema": null,
+        "src_table": null,
+        "src_path": "/Volumes/chris_koester/dlt_metaprog_dev/source_files/src_table_05",
+        "tgt_table": "tgt_table_05",
+        "expectations": {
+            "valid_event_date": "event_date <> '2020-01-01'"
+        },
+        "batch": "2"
+    },
+    {
+        "src_catalog": null,
+        "src_schema": null,
+        "src_table": null,
+        "src_path": "/Volumes/chris_koester/dlt_metaprog_dev/source_files/src_table_06",
+        "tgt_table": "tgt_table_06",
+        "expectations": {
+            "valid_event_date": "event_date <> '2020-01-01'"
+        },
+        "batch": "2"
+    },
+    {
+        "src_catalog": null,
+        "src_schema": null,
+        "src_table": null,
+        "src_path": "/Volumes/chris_koester/dlt_metaprog_dev/source_files/src_table_07",
+        "tgt_table": "tgt_table_07",
+        "expectations": {
+            "valid_event_date": "event_date <> '2020-01-01'"
+        },
+        "batch": "2"
+    },
+    {
+        "src_catalog": null,
+        "src_schema": null,
+        "src_table": null,
+        "src_path": "/Volumes/chris_koester/dlt_metaprog_dev/source_files/src_table_08",
+        "tgt_table": "tgt_table_08",
+        "expectations": {
+            "valid_event_date": "event_date <> '2020-01-01'"
+        },
+        "batch": "2"
+    }
+]
