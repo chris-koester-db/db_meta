@@ -1,0 +1,44 @@
+resources:
+  pipelines:
+    db_meta_pipeline_01:
+      name: db_meta_pipeline_01
+      target: db_meta_${bundle.environment}
+      clusters:
+        - num_workers: 1
+          label: default
+          custom_tags:
+            workload: db_meta
+        - custom_tags:
+            workload: db_meta
+          label: maintenance
+      libraries:
+        - notebook:
+            path: ../src/dlt_pipeline.ipynb
+      photon: true
+      catalog: ${var.pl_target_catalog}
+      channel: CURRENT
+      configuration:
+        config_folder: ${workspace.file_path}/config
+        config_file: task_metadata.json
+        metadata_batch: "1"
+    db_meta_pipeline_02:
+      name: db_meta_pipeline_02
+      target: db_meta_${bundle.environment}
+      clusters:
+        - num_workers: 1
+          label: default
+          custom_tags:
+            workload: db_meta
+        - custom_tags:
+            workload: db_meta
+          label: maintenance
+      libraries:
+        - notebook:
+            path: ../src/dlt_pipeline.ipynb
+      photon: true
+      catalog: ${var.pl_target_catalog}
+      channel: CURRENT
+      configuration:
+        config_folder: ${workspace.file_path}/config
+        config_file: task_metadata.json
+        metadata_batch: "2"
